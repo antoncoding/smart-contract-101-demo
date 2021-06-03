@@ -1,14 +1,21 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
-import {ERC20} from "@openzeppelin/contracts/token/erc20/ERC20.sol";
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract WETH is ERC20 {
-  function withdraw(uint256 _amount) external {
 
+  constructor(string memory _name, string memory _symbol) ERC20(_name, _symbol) {
+    
   }
 
-  function deposit() {
+  // user burn weth and withdraw eth
+  function withdraw(uint256 _amount) external {
+    uint256 i = 100;
+  }
 
+  // user put eth, get weth out
+  function deposit() external {
+    uint256 i = 100;
   }
 }
