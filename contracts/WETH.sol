@@ -11,11 +11,11 @@ contract WETH is ERC20 {
 
   // user burn weth and withdraw eth
   function withdraw(uint256 _amount) external {
-    uint256 i = 100;
+    uint256 temp = _amount;
   }
 
   // user put eth, get weth out
-  function deposit() external {
-    uint256 i = 100;
+  function deposit() payable external {
+    uint256 temp = 0;
   }
 }
